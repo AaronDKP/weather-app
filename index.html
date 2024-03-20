@@ -8,8 +8,48 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <label for="locationInput"></label>
-    <input type="text" name="locationInput" id="locationInput">
-    <button type="button" id="locationSubmit">Submit</button>
+    <div id="container">
+        <div id="searchContainer">
+            <button type="button" id="locationSubmit"><img src="../src/img/searchIcon.svg" alt="magnifying glass icon" id="searchIcon"></button>
+            <label for="locationInput"></label>
+            <input type="text" name="locationInput" id="locationInput" placeholder="Search for a city or airport">
+        </div>
+        <div id="currentContainer">
+            <div id="currentLocation"></div>
+            <div id="currentTemp"></div>
+            <div id="currentCondition"></div>
+            <div id="currentHiLo"></div>
+        </div>
+        <div id="hourContainer">
+            <div id="hourCondition">Sunny conditions will continue all day</div>
+            <div id="hourlyForecastContainer"></div>
+        </div>
+        <div id="dailyContainer">
+            <h6 id="dailyHeading"><img src="../src/img/calendarIcon.svg" alt="calendar icon" id="calendarIcon">3 DAY FORECAST</h6>
+            <div id="dailyForecastContainer">
+                <div class="dailyForecast">
+                    <div class="day">Today</div>
+                    <div class="dayIcon"><img src="" alt=" "></div>
+                    <div class="dayMin">20</div>
+                    <div class="dayBar"></div>
+                    <div class="dayMax">28</div>
+                </div>
+                <div class="dailyForecast">
+                    <div class="day">Tue</div>
+                    <div class="dayIcon"><img src="" alt=" "></div>
+                    <div class="dayMin">23</div>
+                    <div class="dayBar"></div>
+                    <div class="dayMax">31</div>
+                </div>
+                <div class="dailyForecast">
+                    <div class="day">Wed</div>
+                    <div class="dayIcon"><img src="" alt=" "></div>
+                    <div class="dayMin">18</div>
+                    <div class="dayBar"></div>
+                    <div class="dayMax">22</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
