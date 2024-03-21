@@ -1,0 +1,221 @@
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(https://AaronDKP.github.io/weather-app/fonts/HelveticaNeue\ Thin.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 6rem;
+    gap: 1rem;
+    flex-grow: 1;
+    height: 100%;
+    max-width: 800px;
+}
+
+#searchContainer {
+    display: flex;
+    gap: 4px;
+    width: 14rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 4px 10px;
+}
+
+#searchIcon {
+    height: 1rem;
+    width: 1rem;
+}
+
+#locationSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#locationInput {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    color: #bdbdbd;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#currentContainer {
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    width: 10rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#currentLocation {
+    font-size: 1.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#currentTemp {
+    margin: -10px;
+    font-size: 6em;
+}
+
+#currentCondition, #currentHiLo {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#hourContainer{
+    height: 8rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#hourCondition {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#hourlyForecastContainer {
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 1rem;
+}
+
+.hourlyForecast {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.hourlyHour {
+    font-size: 1em;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.hourlyTemp {
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#hourContainer::-webkit-scrollbar{
+    height: 1.4rem;
+}
+
+#hourContainer::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.05);
+    border: solid 5px transparent;
+    border-radius: 12px;
+  }
+   
+#hourContainer::-webkit-scrollbar-track {
+    display: none;
+}
+
+#dailyContainer {
+    height: 14rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+#dailyHeading {
+    display: flex;
+    width: 100%;
+    padding-bottom: 1rem;
+    align-items: center;
+    gap: 0.4rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#calendarIcon {
+    height: 1rem;
+    width: 1rem;
+}
+
+#dailyForecastContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.dailyForecast {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dayIcon {
+    justify-self: center;
+    grid-column-start: 3;
+}
+
+.dayMin, .dayMax {
+    text-align: center;
+}
+
+.hourlyIcon>img, .dayIcon>img {
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+.dayBar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
