@@ -10,7 +10,6 @@ window.onload = () => {
   const fetch = Promise.resolve(fetchForecast('brisbane', '3'));
 
   fetch.then((result) => processJSON(result))
-    // .then((result) => console.log(result))
     .then((result) => updateGUI(result));
 };
 

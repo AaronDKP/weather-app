@@ -1,4 +1,7 @@
 /* eslint-disable no-plusplus */
+import searchIcon from '../searchIcon.svg';
+import calendarIcon from '../calendarIcon.svg';
+
 function updateCurrentContainer(json) {
   const currentLocation = document.getElementById('currentLocation');
   const currentTemp = document.getElementById('currentTemp');
@@ -127,6 +130,12 @@ function updateDailyContainer(json) {
 }
 
 function updateGUI(json) {
+  const search = document.getElementById('searchIcon');
+  search.src = searchIcon;
+
+  const calendar = document.getElementById('calendarIcon');
+  calendar.src = calendarIcon;
+
   updateCurrentContainer(json);
   updateHourContainer(json);
   updateDailyContainer(json);
