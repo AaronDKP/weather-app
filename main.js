@@ -320,7 +320,7 @@ function getLocation() {
   \******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "02613968527764f616cd.svg";
+module.exports = __webpack_require__.p + "e8678c5599b2e88274c3.svg";
 
 /***/ }),
 
@@ -330,7 +330,7 @@ module.exports = __webpack_require__.p + "02613968527764f616cd.svg";
   \****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "a3b01a3157d0c753eac3.svg";
+module.exports = __webpack_require__.p + "dce5585502fd80b31b6b.svg";
 
 /***/ })
 
