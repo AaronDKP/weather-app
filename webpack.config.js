@@ -10,12 +10,21 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: ['style-loader', 'css-loader'],
       },
 
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'img/',
+            },
+          },
+        ],
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
