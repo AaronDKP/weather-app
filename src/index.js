@@ -6,7 +6,12 @@ import { getLocation } from './modules/userInputs';
 
 import { updateGUI } from './modules/showForecast';
 
+import style from './style.css';
+
 window.onload = () => {
+  const stylesheet = document.querySelector('link');
+  stylesheet.href = style;
+
   const fetch = Promise.resolve(fetchForecast('brisbane', '3'));
 
   fetch.then((result) => processJSON(result))
