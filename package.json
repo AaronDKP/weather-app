@@ -19,7 +19,9 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
+    "css-loader": "^6.10.0",
     "extract-loader": "^4.0.3",
-    "html-loader": "^5.0.0"
+    "html-loader": "^5.0.0",
+    "style-loader": "^3.3.4"
   }
 }
